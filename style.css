@@ -1,0 +1,42 @@
+body{
+	font-family: roboto;
+	background-color: #565695;
+}
+ul{
+	list-style-type:none;
+    margin:0;
+    padding:2%;
+    overflow:hidden;
+    background-color:#1A1A59;
+}
+li{
+	display: inline;
+	padding: 204px;
+}
+li a{
+	font-size: 36px;
+	color: #565695;
+}
+li a:hover{
+	color: #8080B3;	
+}
+.post{
+	padding-bottom: 2%;
+	border:5px solid black;
+	max-width: 50%;
+	margin: auto;
+}
+.ruta{
+	padding-top:5%;
+}	
+article{
+
+}
+h1 {
+	text-align: center;
+}
+p{
+	max-width: 90%;
+	text-align: center;
+	margin: auto;
+}

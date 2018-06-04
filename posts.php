@@ -25,8 +25,8 @@
 	$result = $conn->prepare($query);
 	$result->execute();
 	while($row = $result->fetch(PDO::FETCH_ASSOC)) {
-		echo "<article><h1> ". htmlentities($row['title']) . " </h1>";
-		echo "<p> ". htmlentities($row['message']) ." </p>";
+		echo "<article><h1> ". $row['title'] . " </h1>";
+		echo "<p> ". $row['message'] ." </p>";
 		echo "</article>";
 	}
 ?>

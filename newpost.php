@@ -9,11 +9,11 @@
 		
 		try {
 			$query->execute(array(
-				"title" => $_POST['title'],
-				"message" => $_POST['message']
+				"title" => filter_input(INPUT_POST, 'title', FILTER_SANITIZE_FULL_SPECIAL_CHARS),
+				"message" => filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS)
 			));
 		} catch (Exception $e) {
-					// Tycker vi skiter i alla exceptions helt ärligt, borde hanteras men...
+					// Struntar i alla exceptions helt, borde hanteras men...
 		}									
 	}
 ?>

@@ -1,7 +1,7 @@
 <?php
 $server = "localhost";
 $user = "niklas";
-$pass = "bigdickprust123";
+$pass = "Te15";
 $dbname = "n_blog";
 
 try {
